@@ -1,0 +1,18 @@
+package Lista10;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PolymorphicShapes {
+    public static void main(String[] args) {
+        List<Shape2D> myShapes = new ArrayList<>();
+        myShapes.add(new Circle(5.0));
+        myShapes.add(new Rectangle(4.0, 6.0));
+        myShapes.add(new Square(3.0));
+        myShapes.add(new Triangle(3.0, 4.0, 5.0));
+
+        for (Shape2D shape : myShapes) {
+            System.out.println(shape.draw());
+        }
+    }
+}
